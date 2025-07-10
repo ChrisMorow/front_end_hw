@@ -1,0 +1,4 @@
+Django<6.0.0,>=5.2.0
+djangorestframework>=3.14.0
+django-cors-headers>=4.0.0
+coreapi>=2.3.3

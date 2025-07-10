@@ -1,0 +1,170 @@
+[
+  {
+    "model": "library.book",
+    "pk": 1,
+    "fields": {
+      "title": "Don Quijote de la Mancha",
+      "author": "Miguel de Cervantes",
+      "publication_year": 1605,
+      "isbn10": "8420412147",
+      "isbn13": "9788420412146",
+      "cover_image": "https://images-na.ssl-images-amazon.com/images/I/71KoGzVXA6L.jpg",
+      "synopsis": "El ingenioso hidalgo Don Quijote de la Mancha narra las aventuras de Alonso Quijano, un hidalgo pobre que de tanto leer novelas de caballería acaba enloqueciendo y creyendo ser un caballero andante.",
+      "category": "Clásico",
+      "language": "Español",
+      "available": true
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 2,
+    "fields": {
+      "title": "Cien años de soledad",
+      "author": "Gabriel García Márquez",
+      "publication_year": 1967,
+      "isbn10": "0307474720",
+      "isbn13": "9780307474728",
+      "cover_image": "https://images-na.ssl-images-amazon.com/images/I/91hJ+hgZm4L.jpg",
+      "synopsis": "La historia de la familia Buendía a lo largo de siete generaciones en el pueblo ficticio de Macondo.",
+      "category": "Realismo mágico",
+      "language": "Español",
+      "available": true
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 3,
+    "fields": {
+      "title": "1984",
+      "author": "George Orwell",
+      "publication_year": 1949,
+      "isbn10": "0451524934",
+      "isbn13": "9780451524935",
+      "cover_image": "https://images-na.ssl-images-amazon.com/images/I/71kxa1-0mfL.jpg",
+      "synopsis": "Una distopía que presenta una sociedad totalitaria vigilada por el Gran Hermano.",
+      "category": "Distopía",
+      "language": "Inglés",
+      "available": true
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 4,
+    "fields": {
+      "title": "El Principito",
+      "author": "Antoine de Saint-Exupéry",
+      "publication_year": 1943,
+      "isbn10": "0156012197",
+      "isbn13": "9780156012195",
+      "cover_image": "https://images-na.ssl-images-amazon.com/images/I/71OZY035QKL.jpg",
+      "synopsis": "Un piloto se encuentra con un pequeño príncipe que proviene de otro planeta.",
+      "category": "Fábula",
+      "language": "Francés",
+      "available": false
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 5,
+    "fields": {
+      "title": "Harry Potter y la piedra filosofal",
+      "author": "J.K. Rowling",
+      "publication_year": 1997,
+      "isbn10": "059035342X",
+      "isbn13": "9780590353427",
+      "cover_image": "https://images-na.ssl-images-amazon.com/images/I/81iqZ2HHD-L.jpg",
+      "synopsis": "Harry Potter descubre en su undécimo cumpleaños que es un mago y comienza su aventura en Hogwarts.",
+      "category": "Fantasía",
+      "language": "Inglés",
+      "available": true
+    }
+  },
+  {
+    "model": "library.review",
+    "pk": 1,
+    "fields": {
+      "book": 1,
+      "user": "lector1",
+      "rating": 5,
+      "comment": "Una obra maestra de la literatura española."
+    }
+  },
+  {
+    "model": "library.review",
+    "pk": 2,
+    "fields": {
+      "book": 1,
+      "user": "lector2",
+      "rating": 4,
+      "comment": "Largo pero vale la pena."
+    }
+  },
+  {
+    "model": "library.review",
+    "pk": 3,
+    "fields": {
+      "book": 2,
+      "user": "lector3",
+      "rating": 5,
+      "comment": "El realismo mágico en su máxima expresión."
+    }
+  },
+  {
+    "model": "library.review",
+    "pk": 4,
+    "fields": {
+      "book": 3,
+      "user": "lector4",
+      "rating": 5,
+      "comment": "Más relevante hoy que nunca."
+    }
+  },
+  {
+    "model": "library.review",
+    "pk": 5,
+    "fields": {
+      "book": 4,
+      "user": "lector5",
+      "rating": 5,
+      "comment": "Un libro para todas las edades."
+    }
+  },
+  {
+    "model": "library.review",
+    "pk": 6,
+    "fields": {
+      "book": 5,
+      "user": "lector6",
+      "rating": 5,
+      "comment": "El inicio de una saga maravillosa."
+    }
+  },
+  {
+    "model": "library.libraryuser",
+    "pk": "user123",
+    "fields": {
+      "name": "Ana García",
+      "email": "ana@example.com"
+    }
+  },
+  {
+    "model": "library.libraryuser",
+    "pk": "user456",
+    "fields": {
+      "name": "Juan Pérez",
+      "email": "juan@example.com"
+    }
+  },
+  {
+    "model": "library.rental",
+    "pk": 1,
+    "fields": {
+      "book": 4,
+      "user": "user123",
+      "start_date": "2023-10-01",
+      "end_date": "2023-10-15",
+      "returned": false,
+      "extended": false
+    }
+  }
+]

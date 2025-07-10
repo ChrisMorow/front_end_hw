@@ -1,0 +1,136 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar-logo:hover {
+  opacity: 0.9;
+}
+
+.navbar-logo-img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.navbar-logo h1 {
+  margin: 0;
+  color: #2196f3;
+  font-size: 1.8rem;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-item {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.navbar-item:hover {
+  background-color: #f5f5f5;
+  color: #2196f3;
+}
+
+.navbar-item.active {
+  color: #2196f3;
+  background-color: #e3f2fd;
+}
+
+.navbar-auth {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-user {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar-username {
+  font-weight: 500;
+  color: #333;
+}
+
+.navbar-logout {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.navbar-logout:hover {
+  background-color: #d32f2f;
+}
+
+.navbar-login {
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.navbar-login:hover {
+  background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+  }
+  
+  .navbar-menu {
+    width: 100%;
+    justify-content: center;
+    order: 2;
+  }
+  
+  .navbar-auth {
+    width: 100%;
+    justify-content: center;
+    order: 3;
+  }
+  
+  .navbar-brand {
+    width: 100%;
+    justify-content: center;
+    order: 1;
+  }
+  
+  .navbar-logo h1 {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Don Quijote de la Mancha",
+      "author": "Miguel de Cervantes",
+      "publicationYear": 1605,
+      "isbn10": "8420412147",
+      "isbn13": "9788420412146",
+      "coverImage": "https://images-na.ssl-images-amazon.com/images/I/71KoGzVXA6L.jpg",
+      "synopsis": "El ingenioso hidalgo Don Quijote de la Mancha narra las aventuras de Alonso Quijano, un hidalgo pobre que de tanto leer novelas de caballería acaba enloqueciendo y creyendo ser un caballero andante.",
+      "reviews": [
+        {
+          "user": "lector1",
+          "rating": 5,
+          "comment": "Una obra maestra de la literatura española."
+        },
+        {
+          "user": "lector2",
+          "rating": 4,
+          "comment": "Largo pero vale la pena."
+        }
+      ],
+      "category": "Clásico",
+      "language": "Español",
+      "available": true
+    },
+    {
+      "id": 2,
+      "title": "Cien años de soledad",
+      "author": "Gabriel García Márquez",
+      "publicationYear": 1967,
+      "isbn10": "0307474720",
+      "isbn13": "9780307474728",
+      "coverImage": "https://images-na.ssl-images-amazon.com/images/I/91hJ+hgZm4L.jpg",
+      "synopsis": "La historia de la familia Buendía a lo largo de siete generaciones en el pueblo ficticio de Macondo.",
+      "reviews": [
+        {
+          "user": "lector3",
+          "rating": 5,
+          "comment": "El realismo mágico en su máxima expresión."
+        }
+      ],
+      "category": "Realismo mágico",
+      "language": "Español",
+      "available": true
+    },
+    {
+      "id": 3,
+      "title": "1984",
+      "author": "George Orwell",
+      "publicationYear": 1949,
+      "isbn10": "0451524934",
+      "isbn13": "9780451524935",
+      "coverImage": "https://images-na.ssl-images-amazon.com/images/I/71kxa1-0mfL.jpg",
+      "synopsis": "Una distopía que presenta una sociedad totalitaria vigilada por el Gran Hermano.",
+      "reviews": [
+        {
+          "user": "lector4",
+          "rating": 5,
+          "comment": "Más relevante hoy que nunca."
+        }
+      ],
+      "category": "Distopía",
+      "language": "Inglés",
+      "available": true
+    },
+    {
+      "id": 4,
+      "title": "El Principito",
+      "author": "Antoine de Saint-Exupéry",
+      "publicationYear": 1943,
+      "isbn10": "0156012197",
+      "isbn13": "9780156012195",
+      "coverImage": "https://images-na.ssl-images-amazon.com/images/I/71OZY035QKL.jpg",
+      "synopsis": "Un piloto se encuentra con un pequeño príncipe que proviene de otro planeta.",
+      "reviews": [
+        {
+          "user": "lector5",
+          "rating": 5,
+          "comment": "Un libro para todas las edades."
+        }
+      ],
+      "category": "Fábula",
+      "language": "Francés",
+      "available": false
+    },
+    {
+      "id": 5,
+      "title": "Harry Potter y la piedra filosofal",
+      "author": "J.K. Rowling",
+      "publicationYear": 1997,
+      "isbn10": "059035342X",
+      "isbn13": "9780590353427",
+      "coverImage": "https://images-na.ssl-images-amazon.com/images/I/81iqZ2HHD-L.jpg",
+      "synopsis": "Harry Potter descubre en su undécimo cumpleaños que es un mago y comienza su aventura en Hogwarts.",
+      "reviews": [
+        {
+          "user": "lector6",
+          "rating": 5,
+          "comment": "El inicio de una saga maravillosa."
+        }
+      ],
+      "category": "Fantasía",
+      "language": "Inglés",
+      "available": true
+    }
+  ],
+  "rentals": [
+    {
+      "id": 1,
+      "bookId": 4,
+      "userId": "user123",
+      "userName": "Ana García",
+      "startDate": "2023-10-01",
+      "endDate": "2023-10-15",
+      "returned": false,
+      "extended": false
+    }
+  ],
+  "users": [
+    {
+      "id": "user123",
+      "name": "Ana García",
+      "email": "ana@example.com"
+    },
+    {
+      "id": "user456",
+      "name": "Juan Pérez",
+      "email": "juan@example.com"
+    }
+  ]
+}
